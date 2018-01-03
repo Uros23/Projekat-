@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Products</title>
+            <link rel='stylesheet' type='text/css' href='styles/main.css'>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            
+            <script>
+                if (sessionStorage.getItem('isOkUser')  != 'true'){
+                    window.location.href = 'index.html';
+                }
+                
+                $(function() {
+                    $("#date").datepicker();
+                });
+            </script>
+        </head>
+        
+        <body id='product'>
+            
+            <div class='container'>
+                
+                <div class='suma-box'>
+                    <label> Ukupna suma : </label><p id='suma'>  0 </p>
+                </div>
+                
+                <div id='form-product'>
+                    <div id='form'>
+                        <button id='close' onclick='closeForm();'>X</button>
+                        <label>img path : </label><input type='file' id='photo' ><br><br>
+                        <label>price : </label><input type='number' id='price' min=0><br><br>
+                        <label>product name : </label><input type='text' id='name' required><br><br>
+                        <label>category : </label>
+                        <select id='category'></select><br><br>
+                        <label>post date : </label><input id='date' type='text'><br><br>
+                        <p id='validity'></p>
+                        <button type='button' id='btnCreate' onclick='createProduct();'>Create</button>
+                    </div>
+                </div>
+                
+                <div class='productForm'>
+                    <button id='addProduct' onclick='openForm()'>Add Product</button>
+                    <button id='addCart' onclick='showCart()'>Show Cart</button>
+                    <button id='showCatalog' onclick='showCatalog()'>Show Catalog</button>
+                </div>
+                
+                <div id='filter-form'>
+                    <label>filtering : </label><input type='text' id='filter' onkeyup='search();'><br><br>
+                    <select id='filter-category' onchange='search();'>
+                        <option value='0'>All Categories</option>
+                    </select><br><br>
+                </div>
+                
+                <div class='product-box'>
+                    <ul id = 'katalog'></ul>
+                </div>
+                
+                <div class='product-box'>
+                    <ul id = 'list-cart'></ul>
+                </div>
+            </div>
+            <script type='text/javascript' src='scripts/app.js'></script>
+            
+        </body>
+    </html>

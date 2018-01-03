@@ -1,0 +1,77 @@
+
+/*---Index page---*/
+body {background: url('../images/container_bg.jpg') no-repeat center; background-size: 1800px 1500px;}
+
+.login-box {display: block; width: 700px; max-width: 100%; height: 260px; padding: 35px; border: 2px solid #fff; border-radius: 10px; margin: 250px auto 0; text-align: center; background:url( '../images/images.jpg') no-repeat center;background-size: cover;}
+.login-box .username-box {display: block; overflow: hidden;}
+.login-box .username-box label {float: left; margin-right: 35px; font-size: 55px; line-height: 60px; color: #fff; font-weight: bold;}
+.login-box .username-box input {float: left; margin-top: 2px; width: 300px; height: 50px; border: none; border-radius: 10px; text-align: center; font-size: 30px; color: #021638;}
+
+.login-box .password-box {display: block; margin-top: 30px; clear: both; overflow: hidden;}
+.login-box .password-box label {float: left; margin-right:33px; margin-left: 13px; font-size: 55px; line-height: 60px; color: #fff; font-weight: bold;}
+.login-box .password-box input {float: left; margin-top: 2px; width: 300px; height: 50px; border: none; border-radius: 10px; text-align: center; font-size: 30px;}
+
+.login-box .bottom-box {float: left; margin-top: 50px; clear: both; overflow: hidden;}
+.login-box .bottom-box button {cursor: pointer; width: 150px; margin-right: 50px; height: 50px;  background: #fff; padding-top: 6px; font-size: 25px; text-transform: uppercase; letter-spacing: 2px; border: 2px solid #18013d; border-radius: 10px; font-weight: bold;}
+.login-box .bottom-box button:hover {background: #18013d ; border: 2px solid #fff; color: #fff;}
+.login-box .p-box {float: right; margin-top: 40px;  margin-right: 100px;  overflow: hidden;}
+.login-box .p-box p {font-size: 25px; text-transform: uppercase; font-weight: bold; color: #fff;}
+
+/*---App page---*/
+#product {background: #eff7f7;}
+.container {max-width: 1200px; width: 100%; margin: 0 auto;}
+
+.suma-box {float: left; text-align: center; position: fixed; max-width: 1200px; width: 100%; margin: -15px auto 0; font-size: 20px; color: #ccd7e2; text-transform: uppercase; background: #043260;}
+.suma-box label {display: inline-block; vertical-align: middle; margin-right: 15px;}
+.suma-box p {display: inline-block; vertical-align: middle;}
+
+#form-product {display: none; z-index: 1; overflow: auto; background-color: #baafdb; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+#form-product #form {margin: 55px 20px 0; height: 370px; overflow: hidden;}
+#form-product #form #close {outline: none; float: right; margin-right: 15px; margin-top: 15px; width: 30px; height: 30px; border-radius: 15px; border: none; background: #11033d; color: #fff; cursor: pointer;}
+#form-product #form #close:hover {background: #fff; color: #11033d;}
+#form-product #form label {display: inline-block; font-size: 25px; color: #043260; font-weight: 500;}
+#form-product #form input {width: 180px;display: inline-block; font-size: 25px; color: rgba(77, 87, 106, 1); border: 1px solid #043260; margin-left: 20px;}
+#form-product #form #category {display: inline-block; font-size: 25px; color: rgba(77, 87, 106, 1); border: 1px solid #043260; margin-left: 20px;}
+#form-product #form #btnCreate {outline: none; float: right; width: 150px; height: 50px; padding: 10px 0; color: #fff; background: #11033d; border: 1px solid #fff; cursor: pointer; border-radius: 30px; font-size: 25px;}
+#form-product #form #btnCreate:hover {color: #11033d; background: #fff; border: 1px solid #11033d;}
+#form-product #form #photo {width: 149px;}
+#form label:first-child {margin-right: 5px;}
+
+#filter-form {float: right; margin: 80px 0 0;}
+#filter-form label {display: inline-block; font-size: 25px; color: rgba(77, 87, 106, 1); text-transform: uppercase;}
+#filter-form input {display: inline-block; font-size: 25px; margin-left: 10px; color: rgba(77, 87, 106, 1);}
+#filter-form #filter-category {float: right; display: inline-block; font-size: 25px; color: rgba(77, 87, 106, 1); border: 1px solid #043260; margin-left: 20px;}
+
+.productForm {clear: both; float: left; margin-top: 80px;}
+.productForm button {outline: none; display: block; width: 300px; height: 50px; margin-bottom: 10px; padding: 12px 0; cursor: pointer; background: rgba(77, 87, 106, 1); color: #fff; border: none; font-size: 20px; text-transform: uppercase;}
+.productForm button:hover {background: #ad0606;}
+.product-box {margin-top: 30px; clear: both;}
+.product-box ul {list-style: none; padding: 0; margin: 0;}
+.product-box ul li {display: inline-block; vertical-align: bottom; box-sizing: border-box; height: 800px; margin-right: 11px; padding: 10px 0; text-align: center; margin-bottom: 50px; width: 390px; border: 1px solid rgba(77, 87, 106, 1);}
+.product-box ul#list-cart li {height: 910px;} 
+.product-box ul li:nth-child(3n) {margin-right: 0;}
+.product-box ul li p {display: inline-block; font-size: 30px; width: 270px; color: #353535; border-bottom: 1px solid rgba(77, 87, 106, 1); margin: 30px 60px 10px; height: 50px; line-height: 25px;}
+.product-box ul li .img-box {height: 250px; overflow: hidden; line-height: 250px;}
+.product-box ul li .img-box img {vertical-align: middle; border: 1px solid rgba(77, 87, 106, 1);}
+.price-box input {width: 50px; height: 35px; font-size: 25px; text-align: center; margin-left: 5px; margin-bottom: 20px;}
+.price-box button {display: block; width: 300px; height: 50px; padding: 12px 0; cursor: pointer; background: rgba(77, 87, 106, 1); color: #fff; border: none; margin-bottom: 5px; font-size: 20px; text-transform: uppercase; margin-left: 50px;}
+
+/*datepicker*/
+.ui-datepicker {width: 300px; height: 300px; margin: 5px auto 0 ; font: 12pt Arial, sans-serif;}
+.ui-datepicker table {width: 100%;}
+.ui-datepicker-header {background: #baafdb; color: #043260; font-family:'Times New Roman';}
+.ui-datepicker-title {text-align: center; font-size: 15px;}
+.ui-datepicker-prev {float: left; cursor: pointer; background-position: center -30px;}
+.ui-datepicker-next {float: right;cursor: pointer; background-position: center 0px;}
+.ui-datepicker thead {background-color: #f7f7f7;}
+.ui-datepicker th {background-color: #11033d; text-transform: uppercase; font-size: 8pt; color: #d6e4be;}
+.ui-datepicker tbody td {padding: 0;}
+.ui-datepicker tbody td:last-child {border-right: 0px;}
+.ui-datepicker tbody tr {border-bottom: 1px solid #11033d;}
+.ui-datepicker tbody tr:last-child {border-bottom: 0px;}
+.ui-datepicker a {text-decoration: none;}
+.ui-datepicker td span, .ui-datepicker td a {display: inline-block; font-weight: bold; text-align: center; width: 30px; height: 30px; line-height: 30px; color: #ffffff;}
+.ui-datepicker-calendar .ui-state-default {background: linear-gradient(#18013d, rgba(77, 87, 106, 1)); color: #ffffff; height:40px; width:40px;}
+.ui-datepicker-calendar .ui-state-hover {background: #33adff; color: #FFFFFF;}
+.ui-datepicker-calendar .ui-state-active {background: #33adff;-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1); -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1); box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1); color: #e0e0e0; text-shadow: 0px 1px 0px #4d7a85; border: 1px solid #55838f; position: relative; margin: -1px;}
+.ui-datepicker-unselectable .ui-state-default {background: #D6E4BE; color: #000;}
